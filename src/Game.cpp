@@ -1,8 +1,8 @@
-#include "Game.hpp"
-
 /*
   Starts the game loop and loads the state machine
  */
+
+#include "Game.hpp"
 
 void Game::setup()
 {

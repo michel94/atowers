@@ -1,10 +1,10 @@
-#include <stdio.h>
-
-#include "State.hpp"
-
 /*
   An empty class that simply declares the state machine's functions
  */
+
+#include <stdio.h>
+
+#include "State.hpp"
 
 using namespace std;
 
