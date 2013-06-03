@@ -6,8 +6,8 @@ find_package (SDL REQUIRED)
 
 link_libraries (
   ${SDL_LIBRARY}
-  #${SDLIMAGE_LIBRARY} # if using SDL_image, obviously
-  SDLmain # Sadly not included in SDL_LIBRARY variable
+  #${SDLIMAGE_LIBRARY}
+  SDLmain
 )
 
 #add_library (Tilemap.o src/Tilemap.cpp)
