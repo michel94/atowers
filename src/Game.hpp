@@ -14,7 +14,7 @@ class Game
     SDL_Event event;
 
   public:
-    State *currentState;
+    State *current_state;
 
     void setup();
     void run();
