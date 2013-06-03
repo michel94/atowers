@@ -1,5 +1,9 @@
 #include "Game.hpp"
 
+/*
+  Starts the game loop and loads the state machine
+ */
+
 void Game::setup()
 {
   //SDL_Event event;
