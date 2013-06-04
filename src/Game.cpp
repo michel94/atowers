@@ -10,7 +10,7 @@ void Game::setup(){
 
   SDL_Init(SDL_INIT_EVERYTHING);
   SDL_WM_SetCaption("atowers", NULL);
-  SDL_SetVideoMode(800, 600, 32, SDL_HWSURFACE);
+  screen = SDL_SetVideoMode(800, 600, 32, SDL_HWSURFACE);
 }
 
 void Game::run(){
@@ -20,6 +20,11 @@ void Game::run(){
     if (event.type == SDL_QUIT){
       running = false;
     }
+
+    Wrapper::draw_line(screen, 250, 0, 250, 600, 0xFF); // Draw a test line
+
+    SDL_Flip(screen);
+    Wrapper::clear_screen(screen, 0, 0, 0);
   }
 }
 
