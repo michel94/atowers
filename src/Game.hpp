@@ -8,8 +8,7 @@
 
 using namespace std;
 
-class Game
-{
+class Game{
   private:
     bool running;
     SDL_Event event;
