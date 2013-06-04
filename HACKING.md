@@ -1,3 +1,10 @@
+## General information
+You need to have SDL and CMake installed.
+Explanation in how to install CMake and/or SDL on Windows is found below in section "Building for Windows (MinGW)".
+
+## Building for GNU/Linux (MinGW)
+
+### Configuring atowers
 Follow these steps to build and run atowers:
 
 	mkdir build
@@ -9,16 +16,18 @@ Follow these steps to build and run atowers:
 You can do 'make install' with root privileges to install the project
 globally, but doing so is not recommended.
 
-## Install on Windows (MinGW)
-You need to have libSDL and CMake installed. Explanation in how to install libSDL is below.
+## Building for Windows (MinGW)
 
-### Install libSDL
-From http://www.libsdl.org/ download the latest Development Library for Mingw32 (valid for 64 bit also).
+### Install CMake
+From [CMake website](http://www.cmake.org/cmake/resources/software.html) download the latest binary distribution and install it.
+
+### Install SDL
+From [SDL website](http://www.libsdl.org/) download the latest Development Library for Mingw32 (valid for 64 bit also).
 From the package extract the following:
 
-	- From bin directory, extract SDL.dll and sdl-config to somewhere that PATH variable can find, preferably to the bin directory of MinGW installation
-	- From include directory, extract SDL directory to the include directory of MinGW installation
-	- From lib directory, extract all files to the lib directory of MinGW installation
+	1. From bin/ directory, extract SDL.dll and sdl-config to somewhere that PATH variable can find, preferably to the bin/ directory of MinGW installation
+	2. From include/ directory, extract SDL directory to the include/ directory of MinGW installation
+	3. From lib/ directory, extract all files to the lib/ directory of MinGW installation
 
 ### Configuring atowers
 Follow these steps to build and run atowers from source:
