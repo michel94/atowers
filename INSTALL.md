@@ -35,5 +35,6 @@ Follow these steps to build and run atowers:
  mkdir build
  cd build
   cmake -G"Unix Makefiles" -DSDL_LIBRARY="mingw32;SDLmain;SDL;-lpthread" ..
-  make ./atowers
+  make
+  ./atowers
 ```
