@@ -5,11 +5,13 @@ In order to build atowers, you will need to have both SDL and CMake installed.
 
 Follow these steps to build and run atowers:
 
+```
  mkdir build
  cd build
   cmake ..
   make
   ./atowers
+```
 
 You can run 'make install' with root privileges to install the project
 globally, but doing so is not recommended.
@@ -30,7 +32,9 @@ From the package extract the following:
 
 Follow these steps to build and run atowers:
 
+```
  mkdir build
  cd build
   cmake -G"Unix Makefiles" -DSDL_LIBRARY="mingw32;SDLmain;SDL;-lpthread" ..
   make ./atowers
+```
