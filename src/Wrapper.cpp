@@ -13,6 +13,15 @@ void Wrapper::set_pixel(SDL_Surface *screen, int x, int y, Uint8 color)
   *p = color;
 }
 
+
+void Wrapper::clear_screen(SDL_Surface *screen, int r, int g, int b)
+{
+  /* Clears the screen by drawing a rectangle with color R,G,B on it */
+  Uint8 background_color = SDL_MapRGB(screen->format, r, g, b);
+  SDL_FillRect(screen, NULL, background_color);
+}
+
+
 void Wrapper::draw_line(SDL_Surface *screen, int x1, int y1, int x2, int y2, Uint8 color)
 {
   /* Draw a line from (x1, y1) to (x2, y2) */
