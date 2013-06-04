@@ -10,13 +10,12 @@ link_libraries (
   SDLmain
 )
 
-#add_library (Tilemap.o src/Tilemap.cpp)
-#add_library (State.o src/State.cpp)
-#add_library (TitleState.o src/TitleState.cpp)
-#add_library (PlayState.o src/PlayState.cpp)
-#add_library (Player.o src/Player.cpp)
+add_library (State.o src/State.cpp)
+add_library (Wrapper.o src/Wrapper.cpp)
 
-#link_libraries (Player.o PlayState.o Tilemap.o State.o TitleState.o)
+link_libraries (State.o Wrapper.o)
 
 add_executable (atowers src/Game.cpp)
+target_link_libraries (atowers State.o Wrapper.o)
+
 #target_link_libraries (atowers Player.o PlayState.o Tilemap.o State.o TitleState.o)
