@@ -25,9 +25,10 @@ void Game::run()
       running = false;
     }
 
-    Wrapper::draw_line(screen, 250, 0, 250, 600, 0xFFF);
+    Wrapper::draw_line(screen, 250, 0, 250, 600, 0xFF);
 
     SDL_Flip(screen);
+    Wrapper::clear_screen(screen, 0, 0, 0);
   }
 }
 
